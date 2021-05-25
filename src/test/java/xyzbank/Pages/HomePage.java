@@ -20,26 +20,21 @@ public class HomePage extends ParentPage {
     @FindBy(xpath = ".//button[contains(text(),'Manager')]")
     private WebElement managerLoginBttn;
 
-    public HomePage(WebDriver driver) {
+    public HomePage(WebDriver driver){
         super(driver);
     }
-
     public void customerLogin() {
         customerLoginBttn.click();
     }
-
     public void selectCust() {
         selectCust.click();
     }
-
     public void selectCustNameToLogin() {
         customerName.click();
     }
-
     public void custLoginBttn() {
         custLoginBttn.click();
     }
-
     public void managerLogin() {
         managerLoginBttn.click();
     }

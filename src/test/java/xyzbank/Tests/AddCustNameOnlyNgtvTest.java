@@ -10,7 +10,7 @@ import xyzbank.Pages.ManagerPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class AddCustNameOnlyNgtvTest extends BaseTest {
+public class AddCustNameOnlyNgtvTest extends BaseTest{
     @Test
     public void newCustNameOnlyValidation() {
         HomePage home = new HomePage(driver);

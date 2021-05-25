@@ -9,7 +9,7 @@ import xyzbank.Pages.*;
 
 import java.util.concurrent.TimeUnit;
 
-public class AddBankAccountTest extends BaseTest {
+public class AddBankAccountTest extends BaseTest{
     @Test
     public void addBankAccountForCustomer() {
         HomePage home = new HomePage(driver);

@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class AddCustomerPositiveTest extends BaseTest {
+public class AddCustomerPositiveTest extends BaseTest{
     @Test
     public void addCustomerTest() {
         HomePage home = new HomePage(driver);

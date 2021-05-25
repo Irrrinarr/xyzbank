@@ -10,7 +10,7 @@ import xyzbank.Pages.HomePage;
 
 import java.util.concurrent.TimeUnit;
 
-public class WithdrawalNegativeAmountTest extends BaseTest {
+public class WithdrawalNegativeAmountTest extends BaseTest{
     @Test
     public void negativeAmountWithdrawalNgtvTest() {
         HomePage home = new HomePage(driver);

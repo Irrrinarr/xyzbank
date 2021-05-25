@@ -9,7 +9,7 @@ import xyzbank.Pages.HomePage;
 
 import java.util.concurrent.TimeUnit;
 
-public class WithdrawalNoAmountTest extends BaseTest {
+public class WithdrawalNoAmountTest extends BaseTest{
     @Test
     public void emptyAmountWithdrawalNgtvTest() {
         HomePage home = new HomePage(driver);

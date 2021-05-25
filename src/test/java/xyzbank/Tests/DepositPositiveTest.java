@@ -10,7 +10,7 @@ import xyzbank.Pages.HomePage;
 
 import java.util.concurrent.TimeUnit;
 
-public class DepositPositiveTest extends BaseTest {
+public class DepositPositiveTest extends BaseTest{
     @Test
     public void addDepositePositive() {
         HomePage home = new HomePage(driver);
