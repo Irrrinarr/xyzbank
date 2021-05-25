@@ -9,9 +9,9 @@ import xyzbank.Pages.CustomerPersonalPage;
 import xyzbank.Pages.HomePage;
 import java.util.concurrent.TimeUnit;
 
-public class WithdrawalPositiveTest extends BaseTest {
+public class WithdrawalPositiveTest extends BaseTest{
     @Test
-    public void addWithdrawlPositive() {
+    public void addWithdrawalPositive() {
         HomePage home = new HomePage(driver);
         CustomerPersonalPage customer = new CustomerPersonalPage(driver);
 

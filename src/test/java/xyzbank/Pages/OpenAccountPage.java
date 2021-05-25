@@ -17,26 +17,21 @@ public class OpenAccountPage extends ParentPage {
     @FindBy(xpath = ".//option[@value='Dollar']")
     private WebElement currencyOption;
 
-    public OpenAccountPage(WebDriver driver) {
+    public OpenAccountPage(WebDriver driver){
         super(driver);
     }
-
     public void selectCustomer() {
         selectCustomer.click();
     }
-
     public void customerName() {
         customerName.click();
     }
-
     public void currencyOption() {
         selectCurrency.click();
     }
-
     public void selectCurrency() {
         currencyOption.click();
     }
-
     public void processButton() {
         processBttn.click();
     }

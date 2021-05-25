@@ -8,7 +8,7 @@ import xyzbank.Helpers.BaseTest;
 import xyzbank.Pages.HomePage;
 import java.util.concurrent.TimeUnit;
 
-public class CustomerLoginTest extends BaseTest {
+public class CustomerLoginTest extends BaseTest{
     @Test
     public void loginAsCustomer() {
         HomePage home = new HomePage(driver);

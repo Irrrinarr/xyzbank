@@ -13,18 +13,15 @@ public class ManagerPage extends ParentPage {
     @FindBy(xpath = ".//button[contains(text(),'Customers')]")
     private WebElement customersBttn;
 
-    public ManagerPage(WebDriver driver) {
+    public ManagerPage(WebDriver driver){
         super(driver);
     }
-
     public void addCustomerButton() {
         addCustomerBttn.click();
     }
-
     public void openAccountButton() {
         openAccountBttn.click();
     }
-
     public void customersButton() {
         customersBttn.click();
     }

@@ -10,7 +10,7 @@ import xyzbank.Pages.ManagerPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class AddCustNoCodeNgtvTest extends BaseTest {
+public class AddCustNoCodeNgtvTest extends BaseTest{
     @Test
     public void newCustNoPostCodeValidation() {
         HomePage home = new HomePage(driver);

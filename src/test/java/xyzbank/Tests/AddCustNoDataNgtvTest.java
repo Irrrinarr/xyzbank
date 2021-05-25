@@ -9,7 +9,7 @@ import xyzbank.Pages.HomePage;
 import xyzbank.Pages.ManagerPage;
 import java.util.concurrent.TimeUnit;
 
-public class AddCustNoDataNgtvTest extends BaseTest {
+public class AddCustNoDataNgtvTest extends BaseTest{
     @Test
     public void newCustEmptyFieldsValidation() {
         HomePage home = new HomePage(driver);

@@ -10,11 +10,6 @@ import java.util.Iterator;
 import java.util.Set;
 
 public class AddCustomerPage extends ParentPage {
-
-    public AddCustomerPage(WebDriver driver) {
-        super(driver);
-    }
-
     @FindBy(xpath = ".//input[@ng-model='fName']")
     private WebElement firstName;
     @FindBy(xpath = ".//input[@ng-model='lName']")
@@ -24,6 +19,9 @@ public class AddCustomerPage extends ParentPage {
     @FindBy(xpath = ".//button[@type='submit']")
     private WebElement submitBttn;
 
+    public AddCustomerPage(WebDriver driver) {
+        super(driver);
+    }
     public void newCustomer(String first, String last, String code) {
         firstName.sendKeys(first);
         lastName.sendKeys(last);
@@ -31,7 +29,6 @@ public class AddCustomerPage extends ParentPage {
         submitBttn.click();
         popUpsHandler();
     }
-
     public void popUpsHandler() {
         String MainWindow = driver.getWindowHandle();
         Set<String> s1 = driver.getWindowHandles();
@@ -45,15 +42,12 @@ public class AddCustomerPage extends ParentPage {
         }
         driver.switchTo().window(MainWindow);
     }
-
     public void customerFirstName(String value) {
         firstName.sendKeys(value);
     }
-
     public void customerLastName(String value) {
         lastName.sendKeys(value);
     }
-
     public void submitNewCustomer() {
         submitBttn.click();
     }

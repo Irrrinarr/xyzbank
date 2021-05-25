@@ -19,31 +19,25 @@ public class CustomerPersonalPage extends ParentPage {
     @FindBy(xpath = ".//form[@ng-submit='withdrawl()']//button[contains(text(),'Withdraw')]")
     private WebElement withdrawBttn;
 
-    public CustomerPersonalPage(WebDriver driver) {
+    public CustomerPersonalPage(WebDriver driver){
         super(driver);
     }
-
     public void amount(String value) {
         transactionAmount.click();
         transactionAmount.sendKeys(value);
     }
-
     public void addDeposit() {
         depositMenu.click();
     }
-
     public void submitDeposit() {
         depositBttn.click();
     }
-
     public void addWithdraw() {
         withdrawlMenu.click();
     }
-
     public void submitWithdraw() {
         withdrawBttn.click();
     }
-
     public void transactionsMenu() {
         transactionsMenu.click();
     }

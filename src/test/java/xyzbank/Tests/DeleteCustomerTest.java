@@ -9,7 +9,7 @@ import xyzbank.Pages.ManagerPage;
 
 import java.util.concurrent.TimeUnit;
 
-public class DeleteCustomerTest extends BaseTest {
+public class DeleteCustomerTest extends BaseTest{
     @Test
     public void addDeleteCustomer() {
         HomePage home = new HomePage(driver);
